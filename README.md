@@ -6,7 +6,7 @@ Code by L. Betz (linda.betz@uk-koeln.de)
 
 There are two files:
 
-* Code_Main_Analysis.R provides code to reproduce results and plots reported in the main manuscript.
+* Main_Analysis.R provides code to reproduce results and plots reported in the main manuscript.
 * Custom_Functions.R provides several custom functions used in Code_Main_Analysis.R.
 
 Data required for the analysis (MIDUS samples) are available for public use at https://www.icpsr.umich.edu/web/pages/:
