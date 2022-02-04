@@ -1,8 +1,8 @@
 # ~~~~~~~~~~~~~~~~~~~~~~~~~~     Code for     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ #
 #                                                                            #
-#                  The role of childhood abuse and neglect                   #
-#                   in depressive affect in adulthood:                       #
-#        a machine learning approach in a general population sample          #
+#         Disentangling the impact of childhood abuse and neglect            #
+#                 on depressive affect in adulthood:                         #
+#      a machine learning approach in a general population sample.           #
 #                                                                            #
 #     Linda Betz, Marlene Rosen, Raimo K.R. Salokangas, Joseph Kambeitz      #
 #                                                                            #
