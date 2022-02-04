@@ -160,16 +160,16 @@ merged_data <- pred_data_train %>%
 set.seed(123)
 merged_data %>%
   dplyr::select(outcome,
-         B4QCT_EA,
-         B4QCT_EN,
-         B4QCT_PA,
-         B4QCT_PN,
-         B4QCT_SA,
-         B4ZAGE) %>%
+                B4QCT_EA,
+                B4QCT_EN,
+                B4QCT_PA,
+                B4QCT_PN,
+                B4QCT_SA,
+                B4ZAGE) %>%
   map(
     .,
     ~ oneway_test(
-      as.numeric(.) ~ as.factor(merged_data$sample),
+      as.numeric(.) ~ factor(merged_data$sample, levels = c("training", "test")),
       data = merged_data,
       distribution = "approximate"
     )
@@ -179,15 +179,13 @@ merged_data %>%
 set.seed(123)
 merged_data %>%
   dplyr::select(B1PRSEX,
-         B4ZSITE) %>%
-  map(
-    .,
-    ~ chisq_test(
-      as.factor(.) ~ as.factor(merged_data$sample),
-      data = merged_data,
-      distribution = "approximate"
-    )
-  )
+                B4ZSITE) %>%
+  map(.,
+      ~ chisq_test(
+        as.factor(.) ~ factor(merged_data$sample, levels = c("training", "test")),
+        data = merged_data,
+        distribution = "approximate"
+      ))
 
 # ---------------------- 4: Train Machine Learning Models ----------------------
 
@@ -395,7 +393,7 @@ ale_plot_items[[1]] +
 ggsave(
   "Figure_5.pdf",
   device = "pdf",
-  width = 21,
+  width = 21.65,
   height = 13,
   units = "cm"
 )
