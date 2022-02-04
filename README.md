@@ -1,3 +1,4 @@
+# Machine Learning Approach to the Role of Childhood Trauma on Adult Depressive Affect
 R-code to reproduce analyses described in "The role of childhood abuse and neglect in depressive affect in adulthood: a machine learning approach in a general population sample" by Linda T. Betz, Marlene Rosen, Raimo Salokangas, and Joseph Kambeitz.
 
 Code by L. Betz (linda.betz@uk-koeln.de)
